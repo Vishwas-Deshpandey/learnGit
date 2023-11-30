@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="Container">
+
+        <div class="alert">
+            <h4 id="alertType"></h4>
+            <p id="alertMessage">your message goes here....</p>
+            <hr>
+            <button id="alertButton">Ok</button>
+
+            <div class="correct">
+                <h5>Correct Ans</h5>
+                <span id="answer">100</span>
+            </div>
+
+        </div>
+
+
+        <h2>Guess a Number between 1 - 100 </h2>
+
+        <input type="number" placeholder="type here" class="inputField"> 
+        <span id="message"></span>
+        <button class="btn" onclick="CheckValue()">Guess</button>
+        <span class="alreadyGuessed"></span>
+        
+        <div class="chances">
+            <span>Chances</span>
+            <span id="chancesleft"></span>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/e0b4a1a382.js" crossorigin="anonymous"></script> -->
+</body>
+</html>
